@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 30px 0 0 70px;
+}
+
+.main-nav{
+   margin: 30px 70px 0 0;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links a{
+    text-decoration: none;
+}
+
+.nav-links li{
+    list-style: none;
+    padding-right: 45px;
+    font-size: 130%;
+}
+
+.nav-content{
+    display: flex;
+}
+
+.navContent-text{
+    margin: 70px 0 0 50px;
+    width: 95%;
+}
+
+.navContent-text p{
+    margin-top: 20px;
+    font-size: 130%;
+    text-align: justify;
+}
+
+.navContent-text a{
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 0 0 100px;
+}
+
+.sec-2, .sec-5{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec2-text , .sec5-text {
+    width: 40%;
+}
+
+.sec2-image , .sec5-image{
+    width: 50%;
+}
+
+.sec2-text , .sec5-text{
+    margin: 150px 0 0 40px;
+}
+
+.sec2-text h1 , .sec5-text h1{
+    font-size: 250%;
+}
+
+.sec2-text p , .sec5-text p{
+    width: 85%;
+    font-size: 130%;
+}
+
+.sec2-image img , .sec4-image img ,.sec5-image img{
+    width: 100%;
+}
+
+.sec-3{
+    margin-top: 30px;
+}
+
+.sec-3 h1{
+    text-align: center;
+    font-size: 250%;
+}
+
+.sec-3 p{
+    text-align: center;
+}
+
+.sec3-image{
+    background-image: url('Mockup-1.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.sec-5 ,.sec-6 , .section-7, .section-8 , footer{
+    margin-top: 100px;
+}
+
+.sec-6{
+    background-image: url('Screen-1.png');
+    border-radius: 8px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.section-7{
+    background-color: #000;
+    color: #fff;
+}
+
+.sec7-row {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.col-1 , .col-2, .col-3{
+    width: 30%;
+}
+
+.member-image{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.f-row{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 30px;
+}
+
+.f-c1 , .f-c2, .f-c3, .f-c4{
+    width: 25%;
+}

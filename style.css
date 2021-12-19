@@ -36,14 +36,19 @@ nav{
 }
 
 .navContent-text{
-    margin: 70px 0 0 50px;
-    width: 95%;
+    margin: 150px 0 0 150px;
+    width: 75%;
+}
+
+.navContent-text h1{
+    width: 85%;
 }
 
 .navContent-text p{
     margin-top: 20px;
-    font-size: 130%;
+    font-size: 90%;
     text-align: justify;
+    width: 55%;
 }
 
 .navContent-text a{
@@ -51,9 +56,48 @@ nav{
     background-color: #000;
     color: #fff;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 15px;
-    margin: 0 0 0 100px;
+    
+}
+
+.navContent-image{
+    background-color: #000;
+    clip-path: ellipse(85% 100% at 50% 0%);
+    display: flex;
+    color: #fff;
+    height: auto;
+}
+
+.image{
+    width: 100%;
+}
+
+.image img{
+    width: 100%;
+    height: 90%;
+    padding: 40px;
+}
+
+.text{
+    padding-top: 80px;
+}
+
+.text h1{
+    font-size: 250%;
+}
+
+.text p{
+    width: 70%;
+}
+
+.text a{
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;   
 }
 
 .sec-2, .sec-5{
@@ -103,7 +147,7 @@ nav{
     background-image: url('Mockup-1.png');
     height: 100vh;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
 }
 
 .sec-5 ,.sec-6 , .section-7, .section-8 , footer{
@@ -116,6 +160,7 @@ nav{
     height: 100vh;
     background-repeat: no-repeat;
     background-position: top;
+    background-size: contain;
 }
 
 .section-7{
@@ -146,10 +191,74 @@ footer{
 
 .f-row{
     display: flex;
-    justify-content: center;
     padding: 20px 0 20px 30px;
+    flex-wrap: wrap;
 }
 
 .f-c1 , .f-c2, .f-c3, .f-c4{
     width: 25%;
+}
+
+@media (max-width:1030px){
+
+    .nav-content{
+        flex-direction: column;
+    }
+    .navContent-image{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:910px){
+    .main-nav{
+        display: none;
+    }
+}
+
+@media (max-width:860px){
+    .sec-2 , .sec-5{
+        flex-direction: column;
+    }
+    .sec2-text , .sec5-text{
+        width: 90%;
+    }
+
+    .sec2-image , .sec5-image{
+        width: 80%;
+    }
+
+    .sec-5{
+        margin-top: 70px;
+    }
+
+    .sec7-row{
+        flex-direction: column;
+    }
+    .col-1, .col-2, .col-3 {
+        width: 40%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    .col-1 h1, .col-2 h1, .col-3 h1{
+        width: 100%;
+    }    
+}
+
+@media (max-width:890px){
+    .f-c1, .f-c2, .f-c3, .f-c4 {
+        width: 45%;
+    }
+}
+
+@media (max-width:500px){
+    .navContent-text{
+        margin-left: 80px;
+        width: 95%;
+    }
+    
+    .navContent-text p{
+        
+        width: 65%;
+    }
 }
